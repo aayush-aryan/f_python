@@ -8,8 +8,8 @@ Title -" Write a Python program to create a histogram from a given list of integ
 
 """
 try:
- def histogram(listElements):
-    for number in listElements :
+ def histogram(listOfInteger):
+    for number in listOfInteger :
         output = ''
         temVariable = number
         while(temVariable > 0):
