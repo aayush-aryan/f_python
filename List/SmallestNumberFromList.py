@@ -1,0 +1,36 @@
+"""
+author -aayush aryan
+date -08-11-2020
+time -9:55
+package -List
+problem Statement-Write a Python program to get the smallest number from a list.
+"""
+
+class SmallestNumberList:
+
+
+
+    # find the minimum value
+    def findMin(self,ListOfNum):
+        """
+        :param ListOfNum:
+        :return:
+        """
+        min = ListOfNum[0]
+        for x in ListOfNum:
+            if x < min:
+                min = x
+        print("Smallest Number in List Items is : ",min)
+try :
+
+    rangeVal = int(input("Enter The range of value you want to enter : "))
+    ListOfNum = [ ]
+    for i in range(rangeVal):
+        val = int(input("Enter The value for List : "))
+        ListOfNum.append(val)
+    print("List Data :- ",ListOfNum)
+except:
+    print('InvalidInput')
+if __name__=="__main__":
+        list_of_data=SmallestNumberList()
+        list_of_data.findMin(ListOfNum)
